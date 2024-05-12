@@ -1,7 +1,6 @@
 import os
 
 import pandas as pd
-
 from sklearn.datasets import fetch_california_housing
 
 
@@ -33,8 +32,10 @@ def get_feature_dataframe() -> pd.DataFrame:
     ------
         Feature dataframe.
     """
+    # loading the data
     df = load_data()
 
+    # seperating the taget variables
     df["id"] = df.index
     df["target"] = df["MedHouseVal"] >= df["MedHouseVal"].median()
     df["target"] = df["target"].astype(int)
