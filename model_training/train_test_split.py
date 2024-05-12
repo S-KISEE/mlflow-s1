@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
-def get_train_test_score_set(df: pd.DataFrame) -> Tuple:
+def get_train_test_set(df: pd.DataFrame) -> Tuple:
     """
     Get training and testing sets.
 

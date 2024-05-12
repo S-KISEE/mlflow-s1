@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/LEGION/Documents/My%20Documents/FuseMachines/Work/MlOpsUpscalling/sprint1/mlflow-s1/mlruns/268658978943819359/dce8ab9dadd646338a016ae6ea6821ab/artifacts
+deleted_time: 1715507454971
+end_time: 1715507213023
+entry_point_name: ''
+experiment_id: '268658978943819359'
+lifecycle_stage: deleted
+run_id: dce8ab9dadd646338a016ae6ea6821ab
+run_name: classifier_training
+run_uuid: dce8ab9dadd646338a016ae6ea6821ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715507207347
+status: 3
+tags: []
+user_id: LEGION
