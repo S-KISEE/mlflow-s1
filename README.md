@@ -4,7 +4,7 @@ The task of first sprint: use of mlflow for logging metrics and parameters along
 To run this project, follow the following steps;
 1. Create and activate virtual environment
     ```
-        poerty install
+        poetry install
     ```
 
 2.  Run the main file
