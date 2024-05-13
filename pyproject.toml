@@ -17,6 +17,7 @@ seaborn = "^0.13.2"
 scikit-learn = "^1.4.2"
 mlflow = "^2.12.2"
 poetry-plugin-export = "^1.8.0"
+flask = "^3.0.3"
 
 
 [build-system]

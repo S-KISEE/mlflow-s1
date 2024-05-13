@@ -40,6 +40,7 @@ if __name__ == "__main__":
     )
 
     # testing
+    # print(x_test)
     y_pred = model.predict(x_test)
 
     # classification reports
