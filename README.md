@@ -14,4 +14,9 @@ To run this project, follow the following steps;
 
     This will start a flask backend server, and we can test it in postman.
 
+If you want to play using UI in mlflow, execute the following command in terminal;
+```
+    mlflow ui
+```
+
 All the training code can be found inside model_training folder.
