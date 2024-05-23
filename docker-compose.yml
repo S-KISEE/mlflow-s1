@@ -1,0 +1,29 @@
+services:
+    mlflow:
+        build:
+            context: ./model_training
+            dockerfile: Dockerfile
+        volumes:
+            - mlruns:/home/app/mlruns
+        ports:
+            - 5000:5000
+        environment:
+            - EXPERIEMENT_NAME
+            - RUN_NAME
+            - MODEL_NAME
+            - ARTIFACT_PATH
+    web:
+        build:
+            context: ./api
+            dockerfile: Dockerfile
+        depends_on:
+            - mlflow
+        ports:
+            - 8000:8000
+        volumes:
+            - mlruns:/home/app/mlruns
+        environment:
+            - MODEL_NAME
+
+volumes:
+    mlruns:

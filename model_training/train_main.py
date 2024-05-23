@@ -1,3 +1,5 @@
+import os
+
 import mlflow
 from data_preprocessing.data_preprocessing import get_feature_dataframe
 from mlflow_utils import set_or_create_experiment
@@ -7,10 +9,10 @@ from train_test_split import get_train_test_set
 from utils import get_classification_metrics, get_performance_plots
 
 # constants
-EXPERIEMENT_NAME = "house_pricing_classifier"
-RUN_NAME = "classifier_training"
-MODEL_NAME = "rf_classifier"
-ARTIFACT_PATH = "models"
+EXPERIEMENT_NAME = os.getenv("EXPERIEMENT_NAME")
+RUN_NAME = os.getenv("RUN_NAME")
+MODEL_NAME = os.getenv("MODEL_NAME")
+ARTIFACT_PATH = os.getenv("ARTIFACT_PATH")
 
 
 if __name__ == "__main__":
