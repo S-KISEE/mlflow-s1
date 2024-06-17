@@ -162,3 +162,4 @@ cython_debug/
 # custom ignore files and folders
 logs.txt
 *.log
+mlruns/*
